@@ -8,285 +8,367 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<style>
-    .custom-card {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .section-title {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-        }
-        .icon {
-            font-size: 2rem;
-            color: #0d6efd; /* Bootstrap primary color */
-        }
-        .footer {
-            background-color: #212529;
-            color: #adb5bd;
-            padding: 30px 0;
-        }
-        .footer a {
-            color: #adb5bd;
-            text-decoration: none;
-        }
-        .footer a:hover {
-            color: #f8f9fa;
-        }
-        .footer .social-icons a {
-            font-size: 1.2rem;
-            margin-right: 10px;
-        }
-</style>
-<body>
+
+<body class="bg-color">
   <!-- header -->
-  <nav class="navbar py-lg-3 navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
-    <div class="container-xl">
-      <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="navbar shadow py-lg-3 navbar-expand-lg bg-white border-bottom sticky-top ">
+    <div class="container-xl d-lg-flex gap-3 flex-lg-column">
+      <div class="d-flex brand-main gap-2 align-items-center justify-content-between">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/img/Yodan.png" alt="logo" style="width: 100px;" srcset="">
+          </a>
+          <div class="social-icons d-none d-lg-flex align-items-center gap-3">
+            <a href="http://" class="text-center">
+              <img src="assets/img/login.svg" alt="img" srcset="">
+              <p class="mt-1 m-0">Login</p>
+            </a>
+            <a href="http://" class="text-center">
+              <img src="assets/img/register.svg" alt="img" srcset="">
+              <p class="mt-1 m-0">Register</p>
+            </a>
+            <a href="http://" class="text-center">
+              <img src="assets/img/call.svg" alt="img" srcset="">
+              <p class="mt-1 m-0">Reach Us</p>
+            </a>
+          </div>
+      </div>
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+      <div class="collapse gap-2 navbar-collapse d-lg-flex w-100" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 fw-semibold fs-6">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link text-dark" href="#">Account</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link text-primary" href="#">Game money</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+            <a class="nav-link text-danger dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gift Shop
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Item</a></li>
+              <li><a class="dropdown-item" href="#">Gift Certificate</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Gift Certificate Shop</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-success dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              My Page
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Charges</a></li>
+              <li><a class="dropdown-item" href="#">Withdrawal</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li><a class="dropdown-item" href="#">Register</a></li>
+            </ul>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+        <form class="d-flex ms-auto" role="search">
+          <div class="input-group border rounded">
+            <!-- Dropdown Button -->
+            <div class="dropdown-option">
+                <select name="" id="" class="h-100 border-0 rounded-3 p-2 border-end">
+                  <option value="items" selected disabled>items</option>
+                  <option value="itemssss">Shop</option>
+                  <option value="itemsaa">items2</option>
+                  <option value="itemsa">A</option>
+                </select>
+            </div>
+    
+            <!-- Search Input -->
+            <input type="text" class="form-control w-50 d-inline border-0" placeholder="Search...">
+    
+            <button class="btn btn-primary border-primary border-2" type="submit">
+                <i class="bi bi-search"></i> Search
+            </button>
+        </div>
         </form>
       </div>
     </div>
   </nav>
   <!-- header -->
 
-  <div class="container my-3 py-3 my-lg-4 py-lg-4">
+  <div class="container-xl my-3 py-3 my-lg-4 py-lg-4">
+
+    <!-- hero section -->
+     <div class="rounded-3 bg-primary p-3 p-lg-5 my-3 my-lg-4 shadow">
+        <h1 class="fs-1 text-light">
+          Embedded payments for platforms & marketplaces
+        </h1>
+        <p class="fs-6 text-light font-semibold">Focused on streamlining and empowering innovative platforms with payments. Focused on streamlining and empowering innovative platforms with payments.</p>
+        <div class="btns gap-3">
+          <a href="http://" class="btn btn-light rounded-pill px-lg-4 text-primary fw-semibold mt-lg-3 px-lg-3">Start Now <i class="text-primary bi bi-arrow-right-circle-fill ms-2"></i></a>
+          
+        </div>
+     </div>
+    <!-- hero section -->
+
+     <!-- new features-->
+      <div class="my-3 my-lg-5 py-3 py-lg-5">
+        <p class="mb-1 fw-semibold fs-6">Online Payment Platform</p>
+        <h2>Everything your platform needs to process payments.<br> Up and running in no time.</h2>
+        <div class="row mt-4 gy-3">
+          <div class="col-md-6">
+            <div class="shadow overflow-hidden text-light border rounded-3" style="background-color: #332553;">
+              <h5 class="fw-semibold p-3 pb-1">Payment</h5>
+              <p class="px-3 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <img src="assets/img/Payments.svg" alt="img">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="shadow overflow-hidden text-light border rounded-3" style="background-color: #3325A2;">
+              <h5 class="fw-semibold p-3 pb-1">Payout</h5>
+              <p class="px-3 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <img src="assets/img/Payout-1.svg" alt="img">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="shadow overflow-hidden text-dark border rounded-3" style="background-color:#F8B3FE;">
+              <h5 class="fw-semibold p-3 pb-1">24*7 Support</h5>
+              <p class="px-3 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <img src="assets/img/Personal.webp" alt="img">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="shadow overflow-hidden text-dark border rounded-3" style="background-color:#76CDA5;">
+              <h5 class="fw-semibold p-3 pb-1">Payment</h5>
+              <p class="px-3 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <img src="assets/img/Onboarding-1.svg" alt="img">
+            </div>
+          </div>
+         
+        </div>
+    </div>
+     <!-- new features-->
 
     <!-- Recent Posts Section -->
     <div class="row gy-3">
-        <div class="col-lg-8">
-            <div class="custom-card bg-light h-100 border">
-                <h5 class="section-title">Latest Job Posts</h5>
-                <p><a href="#" class="text-primary">[MapleStory]</a> Looking for a Maple Land partner</p>
+      <div class="col-lg-8">
+        <div class="custom-card bg-light h-100 border">
+          <h5 class="section-title fw-bold text-primary">Latest Job Posts</h5>
+          <div class="main overflow-hidden">
+            <div class="animated-paragraph">
+              <p class="mb-2 fw-bold"><a href="#" class="text-primary">Click Here</a> Looking for a Maple Land partner.  Looking for a Maple Land partner. </p>
+              <p class="mb-2 fw-bold"><a href="#" class="text-primary">PLease Click</a> Looking for a Maple Land partner</p>
+              <p class="mb-2 fw-bold"><a href="#" class="text-primary">Read More</a> Looking for a Maple Land partner</p>
+              <p class="mb-2 fw-bold"><a href="#" class="text-primary">[MapleStory]</a> Looking for a Maple Land partner</p>
             </div>
+          </div>
+          
         </div>
-        <div class="col-lg-4">
-            <div class="custom-card bg-light border h-100">
-              <h5 class="section-title">Real-Time Game Rankings</h5>
-              <div class="row gy-2">
-                <div class="col-md-6">
-                  <p class="btn-outline-primary btn rounded-1 px-2 py-1 m-0">1. Maple Land (Daily)</p>
-                </div>
-                <div class="col-md-6">
-                  <p class="btn-outline-primary btn rounded-1 px-2 py-1 m-0">2. Maple Land (Daily)</p>
-                </div>
-                <div class="col-md-6">
-                  <p class="btn-outline-primary btn rounded-1 px-2 py-1 m-0">3. Maple Land (Daily)</p>
-                </div>
-                <div class="col-md-6">
-                  <p class="btn-outline-primary btn  rounded-1 px-2 py-1 m-0">4. Maple Land (Daily)</p>
-                </div>
-                <div class="col-md-6">
-                  <p class="btn-outline-primary btn rounded-1 px-2 py-1 m-0">5. Maple Land (Daily)</p>
-                </div>
-              </div> 
-            </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="custom-card bg-light border h-100">
+          <h5 class="section-title fw-bold text-primary">Real-Time Game Rankings</h5>
+           <div class="ranking-option" style="max-height:160px;overflow-y: auto;">
+            <p class="fw-semibold mb-2 text-light rounded-2 p-1 px-3 bg-primary">text text text text</p>
+            <p class="fw-semibold mb-2 text-light rounded-2 p-1 px-3 bg-secondary">text text text text</p>
+            <p class="fw-semibold mb-2 text-light rounded-2 p-1 px-3 bg-warning">text text text text</p>
+            <p class="fw-semibold mb-2 text-light rounded-2 p-1 px-3 bg-success">text text text text</p>
+            <p class="fw-semibold mb-2 text-light rounded-2 p-1 px-3 bg-info">text text text text</p>
+            <p class="fw-semibold mb-2 text-light rounded-2 p-1 px-3 bg-danger">text text text text</p>
+            <p class="fw-semibold mb-2 text-dark rounded-2 p-1 px-3 bg-light border">text text text text</p>
+            <p class="fw-semibold mb-2 text-light rounded-2 p-1 px-3 bg-secondary">text text text text</p>
+           </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- Notices & Support Section -->
+      <!-- Notices & Support Section -->
     <div class="row mt-4">
-        <div class="col-lg-12">
-            <div class="custom-card border bg-light">
-              <div class="row">
-                <div class="col-1 fw-bold text-danger">Notice:</div>
-                <div class="col-11">
-                  <p class="text-danger mb-0 fw-semibold m-0">
-                    <marquee class="m-0" behavior="" direction="">
-                     Game content purchase and job registration service is now open!</marquee>
-                  </p>
-                </div>
-              </div>
+      <div class="col-lg-12">
+        <div class="custom-card border shadow bg-light">
+          <div class="row">
+            <div class="col-2 col-sm-1 fw-bold text-danger bg-light">Notice:</div>
+            <div class="col-10 col-sm-11">
+              <p class="text-danger mb-0 fw-semibold m-0">
+                <marquee class="m-0" behavior="" direction="">
+                  Game content purchase and job registration service is now open!</marquee>
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Contact and Support Cards -->
-    <div class="row mt-4 gy-3">
-        <div class="col-md-6">
-            <div class="custom-card text-center bg-light border">
-                <i class="bi bi-file-earmark-text icon"></i>
-                <h5 class="mt-4">1-on-1 Inquiry</h5>
-                <p>Contact us if you have any questions.</p>
-            </div>
+    <div class="row mt-4 gy-3 contact-support" >
+      <div class="col-md-6">
+        <div style="background-color:#189AB4" class="p-3 p-lg-4 shadow text-center h-100 rounded-3">
+          <img width="auto" height="130" src="assets/img/1to1.png" alt="img" srcset="">
+          <h4 class="mt-3 mb-2 fw-bold text-light">1-to-1 Inquiry</h4>
+          <p class="fw-semibold text-light m-0">Contact us if you have any questions.</p>
         </div>
-        <div class="col-md-6">
-          <div class="custom-card text-center bg-light border">
-            <i class="bi bi-telephone icon"></i>
-            <h5 class="mt-4">Customer Service</h5>
-            <p>7878-7878-5658</p>
+      </div>
+      <div class="col-md-6">
+        <div style="background-color: #D4F1F4;" class="p-3 p-lg-4 shadow border text-center h-100 rounded-3">
+          <img width="auto" height="130" src="assets/img/reach-us.png" alt="img" srcset="">
+          <h4 class="mt-3 mb-2 fw-bold text-primary">Customer Service</h4>
+          <p class="m-0 fw-semibold">7878-7878-5658</p>
         </div>
-           
-        </div>
+      </div>
     </div>
 
     <!-- FAQ Section with Accordion -->
     <div class="row mt-4 gy-3">
       <div class="col-lg-4">
-        <div class="custom-card text-center bg-light border">
-          <h6 class="mb-3">Linking Game</h6>
-          <h3 class="fw-bold mb-3">Inquery</h3>
+        <div class="custom-card text-center border" style="background-color: #75E6DA !important;">
+          
+          <h3 class="fw-bold text-danger mb-2">Inquery</h3>
           <p>Please fill out the inquiry form and we will contact you immediately after confirmation.</p>
-      </div>
-      </div>
-        <div class="col-lg-8">
-            <div class="custom-card border bg-light">
-                <h5 class="section-title">Frequently Asked Questions</h5>
-                <div class="accordion" id="faqAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <i class="bi bi-question-circle me-2"></i> How can I contact a partner?
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                You can reach out via the provided contact details in their post.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <i class="bi bi-question-circle me-2"></i> What if the post lacks enough details?
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                You can comment on the post requesting more information.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="bi bi-question-circle me-2"></i> How do I register a job post?
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Click on the "Post a Job" button and fill in the required details.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                <i class="bi bi-question-circle me-2"></i> What is mileage?
-                            </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Mileage is a reward system that allows you to earn points for completing actions.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingFive">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                <i class="bi bi-question-circle me-2"></i> Can I edit my job post after submission?
-                            </button>
-                        </h2>
-                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Yes, go to "My Posts" and click "Edit" to update your post.
-                            </div>
-                        </div>
-                    </div>
-
-                </div> <!-- End Accordion -->
-            </div>
+          <a href="http://" class="mt-1 rounded-pill px-md-5 btn btn-danger">Click Here</a>
         </div>
-    </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="custom-card border bg-primary">
+          <h5 class="section-title text-light fw-bold">Frequently Asked Questions</h5>
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <i class="bi bi-question-circle me-2"></i> How can I contact a partner?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  You can reach out via the provided contact details in their post.
+                </div>
+              </div>
+            </div>
 
-</div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <i class="bi bi-question-circle me-2"></i> What if the post lacks enough details?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  You can comment on the post requesting more information.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="bi bi-question-circle me-2"></i> How do I register a job post?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Click on the "Post a Job" button and fill in the required details.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <i class="bi bi-question-circle me-2"></i> What is mileage?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Mileage is a reward system that allows you to earn points for completing actions.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <i class="bi bi-question-circle me-2"></i> Can I edit my job post after submission?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes, go to "My Posts" and click "Edit" to update your post.
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- End Accordion -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+
+  </div>
 
   <!-- footer -->
-  <footer class="footer mt-5">
-    <div class="container">
+  <footer class="footer my-3 my-lg-5">
+    <div class="container-xl">
+      <div  style="padding-bottom: 0 !important;" class="bg-primary footer-inner p-3 p-lg-5 rounded-3 text-light"> 
         <div class="row">
-            <!-- Footer Navigation -->
-            <div class="col-md-6 col-lg-4 mb-3">
-                <h5 class="text-white">Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Youth Protection Policy</a></li>
-                    <li><a href="#">Partnership Inquiry</a></li>
-                    <li><a href="#">Customer Service</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
+          <!-- Footer Navigation -->
+          <div class="col-md-6 col-lg-4 mb-3">
+            <h5 class="text-white mb-4 fw-bold">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a class="text-light" href="#">Terms of Use</a></li>
+              <li class="mb-2"><a class="text-light" href="#">Privacy Policy</a></li>
+              <li class="mb-2"><a class="text-light" href="#">Youth Protection Policy</a></li>
+              <li class="mb-2"><a class="text-light" href="#">Partnership Inquiry</a></li>
+              <li class="mb-2"><a class="text-light" href="#">Customer Service</a></li>
+              <li class="mb-2"><a class="text-light" href="#">FAQ</a></li>
+            </ul>
+          </div>
 
-            <!-- Contact Information -->
-            <div class="col-md-6 col-lg-4 mb-3">
-                <h5 class="text-white">Company Info</h5>
-                <p><i class="bi bi-building"></i> Head office</p>
-                <p><i class="bi bi-person"></i> Representative: Gaurav</p>
-                <p><i class="bi bi-briefcase"></i> Business Reg. No: 145-555-1520</p>
-                <p><i class="bi bi-envelope"></i> Email: support@help.com</p>
-                <p><i class="bi bi-telephone"></i> +9970-8080-5800</p>
-                <p><i class="bi bi-geo-alt"></i> GCity Add, South Korea</p>
-            </div>
+          <!-- Contact Information -->
+          <div class="col-md-6 col-lg-4 mb-3">
+            <h5 class="text-white mb-4 fw-bold">Company Info</h5>
+            <p class="mb-2"><i class="bi bi-building me-2"></i> Head office</p>
+            <p class="mb-2"><i class="bi bi-person me-2"></i> Representative: Gaurav</p>
+            <p class="mb-2"><i class="bi bi-briefcase me-2"></i> Business Reg. No: 145-555-1520</p>
+            <p class="mb-2"><i class="bi bi-envelope me-2"></i> support@help.com</p>
+            <p class="mb-2"><i class="bi bi-telephone me-2"></i> +99-8080-5800</p>
+            <p class="mb-2"><i class="bi bi-geo-alt me-2"></i> GCity Add, South Korea</p>
+          </div>
 
-            <!-- Social Media Links -->
-            <div class="col-lg-4 text-lg-end text-center">
-                <h5 class="text-white">Follow Us</h5>
-                <div class="social-icons">
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-twitter"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                </div>
+          <!-- Social Media Links -->
+          <div class="col-lg-4">
+            <h5 class="text-white mb-4 fw-bold">Follow Us</h5>
+            <div class="social-icons d-flex align-items-center gap-3">
+              <a href="#"><i class="bi bi-facebook text-light fs-4"></i></a>
+              <a href="#"><i class="bi bi-twitter text-light fs-4"></i></a>
+              <a href="#"><i class="bi bi-instagram text-light fs-4"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-light fs-4"></i></a>
             </div>
+          </div>
         </div>
 
         <!-- Copyright Section -->
-        <div class="text-center mt-3">
-            <hr class="border-light">
-            <p class="mb-0">&copy; 2025 HS Corporation. All Rights Reserved.</p>
+        <div class="text-center mt-3 py-3">
+          <hr class="border-light">
+          <p class="mb-0">&copy; 2025 HS Corporation. All Rights Reserved.</p>
         </div>
+      </div>
     </div>
-</footer>
+  </footer>
   <!-- footer -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
