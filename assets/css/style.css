@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+.jua-regular {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.noto-sans-kr {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+}
+
+.bg-color {
+	background: linear-gradient(-45deg, #ffffff, #dcecec, #e9ebec, #ffffff);
+	background-size: 400% 400%;
+	animation: gradient-bg 15s ease infinite;
+}
+
+@keyframes gradient-bg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Jua", sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+input:focus , select:focus , button:focus { box-shadow: none !important;border: none;outline: none;}
+
+/* navbar */
+.navbar {
+    font-family: "Jua", sans-serif;
+}
+.navbar a:hover ,
+.navbar img:hover {
+    transition: .99s;
+    transform: scale(.95);
+    
+}
+
+.navbar .social-icons img { height: 40px;width: 40px; }
+
+@media(min-width:992px) {
+    .brand-main {
+        width: 100%;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #dbdbdb;
+
+    }
+}
+
+/* navbar */
+
+.contact-support img{ width: auto; }
+
+
+.custom-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.icon {
+    font-size: 2rem;
+    color: #0d6efd;
+    /* Bootstrap primary color */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-inner{
+    background-image: url("../img/footer-bg.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+footer .social-icons a:hover {
+    transition: .5s;
+    transform: scale(.95);
+}
+
+
+.animated-paragraph {
+    animation: slideUp 10s linear infinite;
+    position: relative;
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-120%);
+    }
+  }
+  
+  .animated-paragraph:hover {
+    animation-play-state: paused;
+  }
+  .accordion-button:not(.collapsed),
+  .accordion-button:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  .accordion-button::after {
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    background-color: var(--bs-danger);
+    background-image: none !important;
+  }
+  .accordion-button.collapsed::after {
+    background-color: var(--bs-gray-300);
+  }
+    
