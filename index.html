@@ -5,10 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="bg-color">
@@ -16,25 +17,25 @@
   <nav class="navbar shadow py-lg-3 navbar-expand-lg bg-white border-bottom sticky-top ">
     <div class="container-xl d-lg-flex gap-3 flex-lg-column">
       <div class="d-flex brand-main gap-2 align-items-center justify-content-between">
-          <a class="navbar-brand" href="index.html">
-            <img src="assets/img/Yodan.png" alt="logo" style="width: 100px;" srcset="">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/Yodan.png" alt="logo" style="width: 100px;" srcset="">
+        </a>
+        <div class="social-icons d-none d-lg-flex align-items-center gap-3">
+          <a href="http://" class="text-center">
+            <img src="assets/img/login.svg" alt="img" srcset="">
+            <p class="mt-1 m-0">Login</p>
           </a>
-          <div class="social-icons d-none d-lg-flex align-items-center gap-3">
-            <a href="http://" class="text-center">
-              <img src="assets/img/login.svg" alt="img" srcset="">
-              <p class="mt-1 m-0">Login</p>
-            </a>
-            <a href="http://" class="text-center">
-              <img src="assets/img/register.svg" alt="img" srcset="">
-              <p class="mt-1 m-0">Register</p>
-            </a>
-            <a href="http://" class="text-center">
-              <img src="assets/img/call.svg" alt="img" srcset="">
-              <p class="mt-1 m-0">Reach Us</p>
-            </a>
-          </div>
+          <a href="http://" class="text-center">
+            <img src="assets/img/register.svg" alt="img" srcset="">
+            <p class="mt-1 m-0">Register</p>
+          </a>
+          <a href="http://" class="text-center">
+            <img src="assets/img/call.svg" alt="img" srcset="">
+            <p class="mt-1 m-0">Reach Us</p>
+          </a>
+        </div>
       </div>
-      
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -48,7 +49,8 @@
             <a class="nav-link text-primary" href="#">Game money</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link text-danger dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link text-danger dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               Gift Shop
             </a>
             <ul class="dropdown-menu">
@@ -61,7 +63,8 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link text-success dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link text-success dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               My Page
             </a>
             <ul class="dropdown-menu">
@@ -79,21 +82,21 @@
           <div class="input-group border rounded">
             <!-- Dropdown Button -->
             <div class="dropdown-option">
-                <select name="" id="" class="h-100 border-0 rounded-3 p-2 border-end">
-                  <option value="items" selected disabled>items</option>
-                  <option value="itemssss">Shop</option>
-                  <option value="itemsaa">items2</option>
-                  <option value="itemsa">A</option>
-                </select>
+              <select name="" id="" class="h-100 border-0 rounded-3 p-2 border-end">
+                <option value="items" selected disabled>items</option>
+                <option value="itemssss">Shop</option>
+                <option value="itemsaa">items2</option>
+                <option value="itemsa">A</option>
+              </select>
             </div>
-    
+
             <!-- Search Input -->
             <input type="text" class="form-control w-50 d-inline border-0" placeholder="Search...">
-    
+
             <button class="btn btn-primary border-primary border-2" type="submit">
-                <i class="bi bi-search"></i> Search
+              <i class="bi bi-search"></i> Search
             </button>
-        </div>
+          </div>
         </form>
       </div>
     </div>
@@ -103,76 +106,82 @@
   <div class="container-xl my-3 py-3 my-lg-4 py-lg-4">
 
     <!-- hero section -->
-     <div class="rounded-3 bg-primary p-3 p-lg-5 my-3 my-lg-4 shadow">
-        <h1 class="fs-1 text-light">
-          Embedded payments for platforms & marketplaces
-        </h1>
-        <p class="fs-6 text-light font-semibold">Focused on streamlining and empowering innovative platforms with payments. Focused on streamlining and empowering innovative platforms with payments.</p>
-        <div class="btns gap-3">
-          <a href="http://" class="btn btn-light rounded-pill px-lg-4 text-primary fw-semibold mt-lg-3 px-lg-3">Start Now <i class="text-primary bi bi-arrow-right-circle-fill ms-2"></i></a>
-          
-        </div>
-     </div>
+    <div data-aos="fade-up"  data-aos-duration="2000" class="rounded-3 bg-primary p-3 p-lg-5 my-3 my-lg-4 shadow">
+      <h1 class="fs-1 text-light">
+        Embedded payments for platforms & marketplaces
+      </h1>
+      <p class="fs-6 text-light font-semibold">Focused on streamlining and empowering innovative platforms with
+        payments. Focused on streamlining and empowering innovative platforms with payments.</p>
+      <div class="btns gap-3">
+        <a href="http://" class="btn btn-light rounded-pill px-lg-4 text-primary fw-semibold mt-lg-3 px-lg-3">Start Now
+          <i class="text-primary bi bi-arrow-right-circle-fill ms-2"></i></a>
+
+      </div>
+    </div>
     <!-- hero section -->
 
-     <!-- new features-->
-      <div class="my-3 my-lg-5 py-3 py-lg-5">
-        <p class="mb-1 fw-semibold fs-6">Online Payment Platform</p>
-        <h2>Everything your platform needs to process payments.<br> Up and running in no time.</h2>
-        <div class="row mt-4 gy-3">
-          <div class="col-md-6">
-            <div class="shadow overflow-hidden text-light border rounded-3" style="background-color: #332553;">
-              <h5 class="fw-semibold p-3 pb-1">Payment</h5>
-              <p class="px-3 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <img src="assets/img/Payments.svg" alt="img">
-            </div>
+    <!-- new features-->
+    <div data-aos="fade-up"  data-aos-duration="2000" class="my-3 my-lg-5 py-3 py-lg-5">
+      <p class="mb-1 fw-semibold fs-6">Online Payment Platform</p>
+      <h2>Everything your platform needs to process payments.<br> Up and running in no time.</h2>
+      <div class="row mt-4 gy-3">
+        <div class="col-md-6">
+          <div class="shadow overflow-hidden text-light border rounded-3" style="background-color: #332553;">
+            <h5 class="fw-semibold p-3 pb-1">Payment</h5>
+            <p class="px-3 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img src="assets/img/Payments.svg" alt="img">
           </div>
-          <div class="col-md-6">
-            <div class="shadow overflow-hidden text-light border rounded-3" style="background-color: #3325A2;">
-              <h5 class="fw-semibold p-3 pb-1">Payout</h5>
-              <p class="px-3 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <img src="assets/img/Payout-1.svg" alt="img">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="shadow overflow-hidden text-dark border rounded-3" style="background-color:#F8B3FE;">
-              <h5 class="fw-semibold p-3 pb-1">24*7 Support</h5>
-              <p class="px-3 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <img src="assets/img/Personal.webp" alt="img">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="shadow overflow-hidden text-dark border rounded-3" style="background-color:#76CDA5;">
-              <h5 class="fw-semibold p-3 pb-1">Payment</h5>
-              <p class="px-3 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <img src="assets/img/Onboarding-1.svg" alt="img">
-            </div>
-          </div>
-         
         </div>
+        <div class="col-md-6">
+          <div class="shadow overflow-hidden text-light border rounded-3" style="background-color: #3325A2;">
+            <h5 class="fw-semibold p-3 pb-1">Payout</h5>
+            <p class="px-3 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img src="assets/img/Payout-1.svg" alt="img">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="shadow overflow-hidden text-dark border rounded-3" style="background-color:#F8B3FE;">
+            <h5 class="fw-semibold p-3 pb-1">24*7 Support</h5>
+            <p class="px-3 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img src="assets/img/Personal.webp" alt="img">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="shadow overflow-hidden text-dark border rounded-3" style="background-color:#76CDA5;">
+            <h5 class="fw-semibold p-3 pb-1">Payment</h5>
+            <p class="px-3 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img src="assets/img/Onboarding-1.svg" alt="img">
+          </div>
+        </div>
+
+      </div>
     </div>
-     <!-- new features-->
+    <!-- new features-->
 
     <!-- Recent Posts Section -->
-    <div class="row gy-3">
+    <div data-aos="fade-down"  data-aos-duration="1000" class="row gy-3">
       <div class="col-lg-8">
         <div class="custom-card bg-light h-100 border">
           <h5 class="section-title fw-bold text-primary">Latest Job Posts</h5>
           <div class="main overflow-hidden">
             <div class="animated-paragraph">
-              <p class="mb-2 fw-bold"><a href="#" class="text-primary">Click Here</a> Looking for a Maple Land partner.  Looking for a Maple Land partner. </p>
-              <p class="mb-2 fw-bold"><a href="#" class="text-primary">PLease Click</a> Looking for a Maple Land partner</p>
-              <p class="mb-2 fw-bold"><a href="#" class="text-primary">Read More</a> Looking for a Maple Land partner</p>
-              <p class="mb-2 fw-bold"><a href="#" class="text-primary">[MapleStory]</a> Looking for a Maple Land partner</p>
+              <p class="mb-2 fw-bold"><a href="#" class="text-primary">Click Here</a> Looking for a Maple Land partner.
+                Looking for a Maple Land partner. </p>
+              <p class="mb-2 fw-bold"><a href="#" class="text-primary">PLease Click</a> Looking for a Maple Land partner
+              </p>
+              <p class="mb-2 fw-bold"><a href="#" class="text-primary">Read More</a> Looking for a Maple Land partner
+              </p>
+              <p class="mb-2 fw-bold"><a href="#" class="text-primary">[MapleStory]</a> Looking for a Maple Land partner
+              </p>
             </div>
           </div>
-          
+
         </div>
       </div>
       <div class="col-lg-4">
         <div class="custom-card bg-light border h-100">
           <h5 class="section-title fw-bold text-primary">Real-Time Game Rankings</h5>
-           <div class="ranking-option" style="max-height:160px;overflow-y: auto;">
+          <div class="ranking-option" style="max-height:160px;overflow-y: auto;">
             <p class="fw-semibold mb-2 text-light rounded-2 p-1 px-3 bg-primary">text text text text</p>
             <p class="fw-semibold mb-2 text-light rounded-2 p-1 px-3 bg-secondary">text text text text</p>
             <p class="fw-semibold mb-2 text-light rounded-2 p-1 px-3 bg-warning">text text text text</p>
@@ -181,12 +190,12 @@
             <p class="fw-semibold mb-2 text-light rounded-2 p-1 px-3 bg-danger">text text text text</p>
             <p class="fw-semibold mb-2 text-dark rounded-2 p-1 px-3 bg-light border">text text text text</p>
             <p class="fw-semibold mb-2 text-light rounded-2 p-1 px-3 bg-secondary">text text text text</p>
-           </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Notices & Support Section -->
+    <!-- Notices & Support Section -->
     <div class="row mt-4">
       <div class="col-lg-12">
         <div class="custom-card border shadow bg-light">
@@ -204,7 +213,7 @@
     </div>
 
     <!-- Contact and Support Cards -->
-    <div class="row mt-4 gy-3 contact-support" >
+    <div class="row mt-4 gy-3 contact-support">
       <div class="col-md-6">
         <div style="background-color:#189AB4" class="p-3 p-lg-4 shadow text-center h-100 rounded-3">
           <img width="auto" height="130" src="assets/img/1to1.png" alt="img" srcset="">
@@ -222,10 +231,10 @@
     </div>
 
     <!-- FAQ Section with Accordion -->
-    <div class="row mt-4 gy-3">
+    <div data-aos-duration="3000"  data-aos="fade-up" class="row mt-4 gy-3">
       <div class="col-lg-4">
         <div class="custom-card text-center border" style="background-color: #75E6DA !important;">
-          
+
           <h3 class="fw-bold text-danger mb-2">Inquery</h3>
           <p>Please fill out the inquiry form and we will contact you immediately after confirmation.</p>
           <a href="http://" class="mt-1 rounded-pill px-md-5 btn btn-danger">Click Here</a>
@@ -316,14 +325,10 @@
     </div>
   </div>
 
-    
-
-  </div>
-
   <!-- footer -->
   <footer class="footer my-3 my-lg-5">
     <div class="container-xl">
-      <div  style="padding-bottom: 0 !important;" class="bg-primary footer-inner p-3 p-lg-5 rounded-3 text-light"> 
+      <div style="padding-bottom: 0 !important;" class="bg-primary footer-inner p-3 p-lg-5 rounded-3 text-light">
         <div class="row">
           <!-- Footer Navigation -->
           <div class="col-md-6 col-lg-4 mb-3">
@@ -373,6 +378,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/script/script.js"></script>
+
 </body>
 
 </html>
